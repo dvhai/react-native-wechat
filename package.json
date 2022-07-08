@@ -1,6 +1,6 @@
 {
   "name": "react-native-wechat",
-  "version": "1.3.0",
+  "version": "1.0.0",
   "description": "react-native library for wechat app",
   "type": "module",
   "main": "lib/index.js",
@@ -17,13 +17,13 @@
     "compile": "tsc -d",
     "start": "concurrently npm:watch-ts npm:sync-to-app",
     "watch-ts": "npm run compile -- --watch",
-    "sync-to-app": "if [ $SHM_APP_SOURCE_PATH ]; then msf ./ $SHM_APP_SOURCE_PATH/node_modules/@shm-open/react-native-wechat; else tail -f /dev/null; fi",
+    "sync-to-app": "if [ $SHM_APP_SOURCE_PATH ]; then msf ./ $SHM_APP_SOURCE_PATH/node_modules/react-native-wechat; else tail -f /dev/null; fi",
     "release": "npm test && npm run build && standard-version && git push --follow-tags origin master && npm publish",
     "test": "eslint src/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shm-open/react-native-wechat.git"
+    "url": "https://github.com/dvhai/react-native-wechat.git"
   },
   "keywords": [
     "wechat",
@@ -45,7 +45,7 @@
     "standard-version": "9.5.0",
     "typescript": "4.7.4"
   },
-  "homepage": "https://github.com/shm-open/react-native-wechat",
+  "homepage": "https://github.com/dvhai/react-native-wechat",
   "author": "shihuimiao",
   "license": "MIT"
 }
